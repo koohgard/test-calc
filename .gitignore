@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.slnx
+.env
+**/.env
+**/*.secret
+**/admin-login*.txt

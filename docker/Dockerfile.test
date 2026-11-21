@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+WORKDIR /src
+COPY global.json Directory.Build.props Test1.Engine.slnf test1.sln ./
+COPY src/Test1.Calculator.Engine/ src/Test1.Calculator.Engine/
+COPY tests/Test1.Calculator.Engine.Tests/ tests/Test1.Calculator.Engine.Tests/
+RUN dotnet restore Test1.Engine.slnf

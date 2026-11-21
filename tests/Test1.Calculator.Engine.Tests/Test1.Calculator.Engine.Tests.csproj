@@ -4,8 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <!-- Run on a newer major runtime when the .NET 8 runtime is not installed. See P-S00-5. -->
-    <RollForward>Major</RollForward>
   </PropertyGroup>
 
   <ItemGroup>

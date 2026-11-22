@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+
+WORKDIR /src
+
+COPY global.json Directory.Build.props .editorconfig test1.sln Test1.Engine.slnf ./
+COPY src/Test1.Calculator.Engine/Test1.Calculator.Engine.csproj src/Test1.Calculator.Engine/
+COPY tests/Test1.Calculator.Engine.Tests/Test1.Calculator.Engine.Tests.csproj tests/Test1.Calculator.Engine.Tests/
+
+RUN dotnet restore Test1.Engine.slnf
+
+COPY . .

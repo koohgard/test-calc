@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+TestResults/
+docker/TestResults/
+publish/
+.git/
+.vs/
+.vscode/
+.claude/
+.cursor/
+.kook/

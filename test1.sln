@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C7309FDC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test1.Calculator.Engine.Tests", "tests\Test1.Calculator.Engine.Tests\Test1.Calculator.Engine.Tests.csproj", "{499C7672-9D75-4C15-B736-7688FAD2EDB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test1.Calculator.App", "src\Test1.Calculator.App\Test1.Calculator.App.csproj", "{A7D9B15A-F81E-4767-BE39-FC5571CAEF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test1.Calculator.App.Tests", "tests\Test1.Calculator.App.Tests\Test1.Calculator.App.Tests.csproj", "{A4E608E3-3DEA-4883-BBB9-46511C0E2816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,19 @@ Global
 		{499C7672-9D75-4C15-B736-7688FAD2EDB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{499C7672-9D75-4C15-B736-7688FAD2EDB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{499C7672-9D75-4C15-B736-7688FAD2EDB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D9B15A-F81E-4767-BE39-FC5571CAEF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D9B15A-F81E-4767-BE39-FC5571CAEF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D9B15A-F81E-4767-BE39-FC5571CAEF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D9B15A-F81E-4767-BE39-FC5571CAEF53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E608E3-3DEA-4883-BBB9-46511C0E2816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E608E3-3DEA-4883-BBB9-46511C0E2816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E608E3-3DEA-4883-BBB9-46511C0E2816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E608E3-3DEA-4883-BBB9-46511C0E2816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9B81CC1A-9B82-4E3C-AA3F-ADADC4936506} = {99A5CCE7-E8D4-403F-9A98-18AD2547AF96}
 		{499C7672-9D75-4C15-B736-7688FAD2EDB3} = {C7309FDC-00C3-47E7-86F0-F4336AF6A6F3}
+		{A7D9B15A-F81E-4767-BE39-FC5571CAEF53} = {99A5CCE7-E8D4-403F-9A98-18AD2547AF96}
+		{A4E608E3-3DEA-4883-BBB9-46511C0E2816} = {C7309FDC-00C3-47E7-86F0-F4336AF6A6F3}
 	EndGlobalSection
 EndGlobal

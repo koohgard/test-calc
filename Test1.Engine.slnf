@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "test1.sln",
+    "projects": [
+      "src\\Test1.Calculator.Engine\\Test1.Calculator.Engine.csproj",
+      "tests\\Test1.Calculator.Engine.Tests\\Test1.Calculator.Engine.Tests.csproj"
+    ]
+  }
+}

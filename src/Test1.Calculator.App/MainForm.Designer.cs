@@ -1,0 +1,24 @@
+#nullable enable
+namespace Test1.Calculator.App;
+
+partial class MainForm
+{
+    private System.ComponentModel.IContainer? components = null;
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && (components is not null))
+        {
+            components.Dispose();
+        }
+
+        base.Dispose(disposing);
+    }
+
+    private void InitializeComponent()
+    {
+        SuspendLayout();
+        Text = "Calculator";
+        ResumeLayout(false);
+    }
+}

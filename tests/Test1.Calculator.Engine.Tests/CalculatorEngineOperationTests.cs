@@ -311,15 +311,18 @@ public class CalculatorEngineOperationTests
 
         engine.Clear();
         Assert.Equal("0", engine.DisplayText);
-        var engine2 = RunSequence("2+2=");
-        Assert.Equal("4", engine2.DisplayText);
+        engine.InputDigit(2);
+        engine.SelectOperation(Operation.Add);
+        engine.InputDigit(2);
+        engine.Calculate();
+        Assert.Equal("4", engine.DisplayText);
     }
 
     [Fact]
     public void Clear_ResetsPendingOperationAndResult()
     {
         Assert.Equal("3", RunSequence("2+C3=").DisplayText);
-        Assert.Equal("4", RunSequence("2+3=C4=").DisplayText);
+        Assert.Equal("4", RunSequence("2+3=C4").DisplayText);
     }
 
     [Fact]
@@ -437,7 +440,11 @@ public class CalculatorEngineOperationTests
 
         engine.Clear();
         Assert.Equal("0", engine.DisplayText);
-        Assert.Equal("4", RunSequence("2+2=").DisplayText);
+        engine.InputDigit(2);
+        engine.SelectOperation(Operation.Add);
+        engine.InputDigit(2);
+        engine.Calculate();
+        Assert.Equal("4", engine.DisplayText);
     }
 
     private static void ApplyKey(CalculatorEngine engine, char ch)

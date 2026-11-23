@@ -5,4 +5,4 @@ services:
       dockerfile: docker/Dockerfile.test
     command: dotnet test Test1.Engine.slnf -c Release --logger trx --results-directory /out
     volumes:
-      - ../TestResults:/out
+      - ./TestResults:/out
